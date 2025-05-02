@@ -1,0 +1,1 @@
+Total running cost: $0.005 | Max budget: $3.000 | Current cost: $0.001, prompt_tokens: 673, completion_tokens: 74Total prompt tokens: 3488, Total completion tokens: 924Total tokens: 4412

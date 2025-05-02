@@ -1,0 +1,21 @@
+
+## test_main.py
+
+import pytest
+from main import MultiplyListNumbers
+
+def test_multiply_and_divide_valid_input():
+    obj = MultiplyListNumbers()
+    numbers = [1, 2, 3, 4, 5]
+    assert obj.multiply_and_divide(numbers) == 6.0
+
+def test_multiply_and_divide_empty_input():
+    obj = MultiplyListNumbers()
+    with pytest.raises(ValueError):
+        obj.multiply_and_divide([])
+
+def test_multiply_and_divide_invalid_input():
+    obj = MultiplyListNumbers()
+    numbers = [1, 2, 'a', 4, 5]
+    with pytest.raises(ValueError):
+        obj.multiply_and_divide(numbers)
